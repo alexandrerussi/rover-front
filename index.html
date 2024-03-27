@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webcam Access</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: rgb(92, 81, 176);
+            background: linear-gradient(90deg, rgba(92, 81, 176, 1) 0%, rgba(125, 106, 208, 1) 57%, rgba(65, 50, 142, 1) 100%);
+        }
+
+        video {
+            width: 70%;
+            height: 70vh;
+            object-fit: cover;
+            /* border: 3px solid #333; */
+            border-radius: 8px;
+            display: block;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo img {
+            width: 200px;
+            height: auto;
+        }
+        
+        .logo h1 {
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: lighter;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="logo">
+        <img src="assets/fiap-school-logo.svg" alt="Logo FIAP School">
+        <h1>ROVER EXPLORER</h1>
+    </div>
+
+    <video id="webcam" autoplay playsinline></video>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
