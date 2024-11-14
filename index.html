@@ -18,13 +18,15 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background: rgb(92, 81, 176);
-            background: linear-gradient(90deg, rgba(92, 81, 176, 1) 0%, rgba(125, 106, 208, 1) 57%, rgba(65, 50, 142, 1) 100%);
+            background: url('assets/MARS_ROVER_EXPLORER_WEBCAM_2.png');
+            background-size: cover;
+            /* background: rgb(92, 81, 176);
+            background: linear-gradient(90deg, rgba(92, 81, 176, 1) 0%, rgba(125, 106, 208, 1) 57%, rgba(65, 50, 142, 1) 100%); */
         }
 
         video {
-            width: 70%;
-            height: 70vh;
+            width: 65%;
+            height: 65vh;
             object-fit: cover;
             /* border: 3px solid #333; */
             border-radius: 8px;
@@ -53,10 +55,10 @@
 
 <body>
 
-    <div class="logo">
+    <!-- <div class="logo">
         <img src="assets/fiap-school-logo.svg" alt="Logo FIAP School">
         <h1>ROVER EXPLORER</h1>
-    </div>
+    </div> -->
 
     <video id="webcam" autoplay playsinline></video>
 
