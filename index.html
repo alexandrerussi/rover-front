@@ -22,15 +22,37 @@
             background-size: cover;
             /* background: rgb(92, 81, 176);
             background: linear-gradient(90deg, rgba(92, 81, 176, 1) 0%, rgba(125, 106, 208, 1) 57%, rgba(65, 50, 142, 1) 100%); */
+            position: relative;
         }
 
-        video {
+        #rover_webcam {
             width: 65%;
             height: 65vh;
             object-fit: cover;
             /* border: 3px solid #333; */
             border-radius: 8px;
             display: block;
+        }
+
+        #astronaut_webcam {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 100px;
+            border: 3px solid white;
+            position: absolute;
+            left: 100px;
+            top: calc(50vh - 100px);
+        }
+
+        .astro_fundo {
+            width: 350px;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 100px;
+            position: absolute;
+            left: 28px;
+            top: calc(50vh - 145px);
         }
 
         .logo {
@@ -60,7 +82,9 @@
         <h1>ROVER EXPLORER</h1>
     </div> -->
 
-    <video id="webcam" autoplay playsinline></video>
+    <video id="rover_webcam" autoplay playsinline></video>
+    <video id="astronaut_webcam" autoplay playsinline></video>
+    <img class="astro_fundo" src="assets/astronaut.png" alt="astronaut">
 
     <script src="js/script.js"></script>
 </body>
